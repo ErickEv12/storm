@@ -1,0 +1,454 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+  line-height: 1.6;
+  color: #222;
+}
+
+/* HEADER */
+header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  background: #003c57;
+  backdrop-filter: blur(10px);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 8%;
+  z-index: 1000;
+}
+
+.logo {
+  color: #fff;
+  font-weight: bold;
+  font-size: 20px;
+  letter-spacing: 2px;
+}
+
+nav a {
+  color: white;
+  margin: 0 15px;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.btn-header {
+  background: #003c57;
+  color: white;
+  padding: 8px 18px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+/* HERO */
+.hero {
+    height: 100vh;
+    background: url('') center/cover no-repeat;
+    display: flex;
+    align-items: center;       /* centraliza vertical */
+    justify-content: flex-start; /* joga para esquerda */
+    text-align: left;
+    color: #003c57;
+    padding: 0 8%;
+}
+
+.hero h1 {
+  font-size: 48px;
+  margin-bottom: 3px;
+}
+
+.hero h2 {
+    font-size: 32px;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    margin-bottom: 30px;
+    font-size: 18px;
+}
+
+.btn-primary {
+  display: inline-block;
+  background: #003c57;
+  color: white;
+  padding: 14px 28px;
+  border-radius: 6px;
+  text-decoration: none;
+  margin-top: 20px;
+  transition: 0.3s;
+}
+
+.btn-primary:hover {
+  background: #00a87f;
+}
+
+/* SECTION */
+.section {
+  padding: 100px 8%;
+  text-align: center;
+}
+
+.bg-light {
+  background: #f5f5f5;
+}
+
+.bg-dark {
+  background: #111;
+  color: white;
+}
+
+/* CARDS */
+.cards {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  flex-wrap: wrap;
+  margin-top: 40px;
+}
+
+.card {
+  background: white;
+  padding: 30px;
+  width: 280px;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+.card.dark {
+  background: #1c1c1c;
+  color: white;
+}
+
+/* FORM */
+form {
+  max-width: 500px;
+  margin: 40px auto 0;
+  display: flex;
+  flex-direction: column;
+}
+
+form input,
+form textarea {
+  padding: 14px;
+  margin-bottom: 15px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+/* FOOTER */
+footer {
+  background: black;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+/* RESPONSIVO */
+@media (max-width: 768px) {
+  nav {
+    display: none;
+  }
+
+  .hero h1 {
+    font-size: 32px;
+  }
+
+  .cards {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+/* SECTION SOBRE */
+
+.sobre {
+    background: #f2f2f2;
+    padding: 100px 5%;
+}
+
+.sobre-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1400px;
+    margin: auto;
+}
+
+/* LADO ESQUERDO */
+
+.sobre-left {
+    flex: 1;
+}
+
+.sobre-left h2 {
+    font-size: 42px;
+    color: #e23d00;
+    font-weight: bold;
+    line-height: 1.2;
+}
+
+.linha {
+    width: 80px;
+    height: 4px;
+    background: #cfcfcf;
+    margin-top: 20px;
+}
+
+/* IMAGEM CENTRAL */
+
+.sobre-img {
+    flex: 1;
+    text-align: center;
+}
+
+.sobre-img img {
+    max-width: 350px;
+}
+
+/* LADO DIREITO */
+
+.sobre-right {
+    flex: 1.2;
+}
+
+.sobre-right h3 {
+    font-size: 20px;
+    color: #666;
+    margin-bottom: 5px;
+}
+
+.sobre-right h1 {
+    font-size: 36px;
+    color: #003c57;
+    margin-bottom: 10px;
+}
+
+.linha-pequena {
+    width: 60px;
+    height: 3px;
+    background: #cfcfcf;
+    margin-bottom: 20px;
+}
+
+.sobre-right p {
+    font-size: 16px;
+    color: #555;
+    line-height: 1.6;
+}
+
+.assinatura {
+    margin-top: 30px;
+    font-style: italic;
+    font-size: 22px;
+}
+
+.depoimentos {
+    background: #f2f2f2;
+    padding: 100px 5%;
+}
+
+.depoimentos-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1400px;
+    margin: auto;
+}
+
+/* LADO ESQUERDO */
+
+.depoimentos-texto {
+    flex: 1;
+    padding-right: 50px;
+}
+
+.depoimentos-texto h3 {
+    color: #666;
+    font-size: 20px;
+}
+
+.depoimentos-texto h2 {
+    font-size: 36px;
+    color: #003c57;
+}
+
+.linha {
+    width: 60px;
+    height: 3px;
+    background: #cfcfcf;
+    margin: 15px 0 25px 0;
+}
+
+.depoimentos-texto p {
+    font-size: 16px;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.depoimentos-texto h4 {
+    color: #003c57;
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+.depoimentos-texto span {
+    color: #777;
+    font-size: 14px;
+}
+
+/* SETAS */
+
+.setas {
+    margin-top: 30px;
+}
+
+.setas button {
+    width: 45px;
+    height: 45px;
+    border: none;
+    margin-right: 10px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.setas button:first-child {
+    background: #cfd8dc;
+}
+
+.setas button:last-child {
+    background: #003c57;
+    color: white;
+}
+
+/* LADO DIREITO */
+
+.depoimentos-imagem {
+      flex: 1;
+    position: relative;
+    bottom: 205px;
+}
+
+.foto-aluno {
+    position: absolute;
+    left: 40px;
+    width: 550px;
+    border-radius: 20px;
+}
+
+.professores {
+    background: #f2f2f2;
+    padding: 80px 5%;
+}
+
+/* TOPO */
+
+.professores-topo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 60px;
+}
+
+.titulo h3 {
+    color: #666;
+    font-size: 18px;
+}
+
+.titulo h2 {
+    color: #003c57;
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.categorias {
+    display: flex;
+    gap: 40px;
+}
+
+.categoria {
+    display: flex;
+    flex-direction: column; /* imagem em cima */
+    align-items: center;
+    cursor: pointer;
+    font-weight: 600;
+    color: #003c57;
+}
+
+.categoria img {
+    width: 35px; /* ajuste como quiser */
+    height: auto;
+    margin-bottom: 6px;
+}
+
+.categoria.ativa {
+    color: #e23d00;
+}
+
+/* CONTEÚDO */
+
+.professores-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 270px;
+}
+
+.professores-img img {
+    width: 400px;
+    border-radius: 10px;
+}
+
+.professores-texto {
+    max-width: 600px;
+}
+
+.professores-texto h2 {
+    font-size: 30px;
+    color: #003c57;
+}
+
+.linha {
+    width: 60px;
+    height: 3px;
+    background: #cfcfcf;
+    margin: 15px 0 25px 0;
+}
+
+.professores-texto p {
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+/* BOTÕES */
+
+.botoes {
+    margin-top: 20px;
+    display: flex;
+    gap: 20px;
+}
+
+.btn-outline {
+    padding: 12px 25px;
+    border: 2px solid #003c57;
+    color: #003c57;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.btn-solid {
+    padding: 12px 25px;
+    background: #003c57;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}

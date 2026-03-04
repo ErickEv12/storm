@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Arena TenniStorm</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <div class="logo">TenniStorm logo</div>
+  <nav>
+    <a href="#home">Início</a>
+    <a href="#programas">Programas</a>
+    <a href="#estrutura">Estrutura</a>
+    <a href="#depoimentos">Depoimentos</a>
+    <a href="#contato">Contato</a>
+  </nav>
+</header>
+
+<section id="home" class="hero">
+  <div class="hero-content">
+    <h1>Arena Tennistorm</h1>
+    <h2>para todas idades</h2>
+    <p>Encontre a unidade mais próxima de você e agende uma aula experimental gratuita.</p>
+    <a href="#programas" class="btn-primary">Quero uma aula experimental</a>
+  </div>
+</section>
+
+  <section class="sobre">
+    <div class="sobre-container">
+
+        <div class="sobre-left">
+        </div>
+
+        <div class="sobre-img">
+            <img src=".png" alt="Diego Tambori">
+        </div>
+
+        <div class="sobre-right">
+            <h3>Conheça a</h3>
+            <h1>Arena Tennistorm</h1>
+            <div class="linha-pequena"></div>
+
+            <p>
+                A Arena Tennistorm nasceu de um grande sonho. Quando se despediu
+                do circuito profissional, Diego Tambori decidiu investir na
+                transformação do tênis brasileiro criando uma metodologia sólida
+                e inovadora para expandir a base de praticantes do esporte.
+                Hoje, atende milhares de alunos de todas as idades,
+                oferecendo aulas de qualidade.
+            </p>
+
+            <div class="assinatura">Diego Tambori.</div>
+        </div>
+
+    </div>
+</section>
+
+<section class="professores">
+
+    <div class="professores-topo">
+        <div class="titulo">
+            <h3>Conheça nossos</h3>
+            <h2>PROFESSORES</h2>
+        </div>
+
+        <div class="categorias">
+
+    <div class="categoria ativa" onclick="trocarProfessor(0)">
+        <img src="img/infantil.png" alt="Infantil">
+        <span>Infantil</span>
+    </div>
+
+    <div class="categoria" onclick="trocarProfessor(1)">
+        <img src="diogo_png-removebg-preview.png" alt="Tênis Juvenil">
+        <span>Tênis Juvenil</span>
+    </div>
+
+    <div class="categoria" onclick="trocarProfessor(2)">
+        <img src="" alt="Tênis Adulto">
+        <span>Tênis Adulto</span>
+    </div>
+
+    <div class="categoria" onclick="trocarProfessor(3)">
+        <img src="img/alto.png" alt="Alto Rendimento">
+        <span>Alto Rendimento</span>
+    </div>
+
+    <div class="categoria" onclick="trocarProfessor(4)">
+        <img src="img/kids.png" alt="Kids">
+        <span>Kids</span>
+    </div>
+
+</div>
+
+    <div class="professores-container">
+
+        <div class="professores-img">
+            <img src="diego.png" id="imagem-professor">
+        </div>
+
+        <div class="professores-texto">
+            <h2 id="nome-professor">Professor Diego Tambori</h2>
+            <div class="linha"></div>
+
+            <p id="descricao-professor">
+                Especialista em formação infantil e desenvolvimento motor.
+            </p>
+
+            <div class="botoes">
+                <a href="#" class="btn-outline">Saiba Mais</a>
+                <a href="#" class="btn-solid">Agende uma aula experimental</a>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<section id="estrutura" class="section bg-dark">
+  <h2>Nossa Estrutura</h2>
+  <div class="cards">
+    <div class="card dark">
+      <h3>Quadras Profissionais</h3>
+      <p>Piso oficial e iluminação LED.</p>
+    </div>
+    <div class="card dark">
+      <h3>Academia Completa</h3>
+      <p>Treinamento físico integrado ao tênis.</p>
+    </div>
+    <div class="card dark">
+      <h3>Área de Convivência</h3>
+      <p>Ambiente confortável para atletas e familiares.</p>
+    </div>
+  </div>
+</section>
+
+<section class="depoimentos">
+
+    <div class="depoimentos-container">
+
+        <!-- LADO ESQUERDO -->
+        <div class="depoimentos-texto">
+            <h3>Depoimentos dos</h3>
+            <h2>Nossos Alunos</h2>
+            <div class="linha"></div>
+
+            <p id="texto-depoimento">
+                “Sou muito feliz em fazer parte dessa equipe incrível...”
+            </p>
+
+            <h4 id="nome-aluno">Erick Giovane</h4>
+            <span id="cargo-aluno">Aluno da Arena Tennistorm - Competitivo-Juvenil</span>
+
+            <div class="setas">
+                <button onclick="anterior()">&#10094;</button>
+                <button onclick="proximo()">&#10095;</button>
+            </div>
+        </div>
+
+        <!-- LADO DIREITO -->
+        <div class="depoimentos-imagem">
+            <img src="erick-aluno.png" class="foto-aluno" id="imagem-aluno">
+        </div>
+
+    </div>
+
+</section>
+</body>
+<script src="script.js"></script>
+</html>
